@@ -1,0 +1,26 @@
+{
+  "name": "agent-vercel-ai",
+  "version": "1.0.0",
+  "description": "Agent using Vercel AI SDK",
+  "main": "src/index.ts",
+  "keywords": [],
+  "license": "MIT",
+  "author": "drappier-charles",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "prod": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@blaxel/sdk": "0.1.6",
+    "fastify": "^5.2.1",
+    "openai": "^4.93.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
