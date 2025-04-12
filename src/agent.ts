@@ -2,7 +2,7 @@ import { blModel } from "@blaxel/sdk";
 
 async function generateVibeTicket(prompt: string) {
   try {
-    const llm = await blModel("cerebras-llama-3-3-70b", {
+    const llm = await blModel("sandbox-openai", {
       temperature: 0.9,
     }).ToLangChain();
     const response = await llm.invoke([
